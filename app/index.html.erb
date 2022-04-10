@@ -1,0 +1,17 @@
+<h1>Versions</h1>
+<table border='1'>
+  <tr>
+    <th></th>
+    <% services.each do |service| %>
+      <th><%= service %></th>
+    <% end %>
+  </tr>
+  <% libraries.each do |librarie_name, versions| %>
+    <tr>
+      <th><%= librarie_name %></th>
+      <% services.each do |service| %>
+        <td><%= versions[service]%></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>

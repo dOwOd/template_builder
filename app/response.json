@@ -1,0 +1,19 @@
+{
+  "services":
+    ["service1", "service2", "service3" ],
+  "libraries":
+    {
+      "ruby":
+        {
+          "service1":3.0,
+          "service2":3.1,
+          "service3":3.0
+        },
+      "rails":
+        {
+          "service1":6.0,
+          "service2":5.0,
+          "service3":4.0
+        }
+    }
+}
