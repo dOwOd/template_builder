@@ -7,7 +7,7 @@ response = JSON.parse(raw_response)
 services = response['services']
 libraries = response['libraries']
 
-content = ERB.new(File.read('index.html.erb')).result(binding)
+content = ERB.new(File.read('version_list.html.erb')).result(binding)
 result = ERB.new(File.read(layout)).result(binding)
 
 File.open('versions.html', 'w') do |file|
